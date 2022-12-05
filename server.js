@@ -21,7 +21,7 @@ app.use(express.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 app.use(
   cors({
-    origin: ["https://grocery-api-frontend.onrender.com", "http://localhost:3000"],
+    origin: ["https://grocery-app-frontend.netlify.app", "http://localhost:3000"],
     credentials: true,
   })
 );
