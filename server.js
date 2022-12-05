@@ -21,7 +21,7 @@ app.use(express.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 app.use(
   cors({
-    origin: ["http://localhost:3000", "https://pinvent-app.vercel.app"],
+    origin: ["http://localhost:3000", "https://grocery-app-frontend.netlify.app"],
     credentials: true,
   })
 );
@@ -33,7 +33,7 @@ app.use("/api/user", userRoute);
 app.use("/api/products", productRoute);
 app.use("/api/contact", contactRoute);
 
-// Routes
+// Routes 
 app.get("/", (req, res) => {
   res.send("index api");
 });
